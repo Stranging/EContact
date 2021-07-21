@@ -30,9 +30,6 @@ namespace EContact.Models
       UrlPhoto = urlPhoto;
       }
 
-    public Contact(int id)
-      {
-      Id = id;
-      }
+  
     }
   }
