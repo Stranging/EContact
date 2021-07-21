@@ -29,5 +29,10 @@ namespace EContact.Models
       Genre = genre;
       UrlPhoto = urlPhoto;
       }
+
+    public Contact(int id)
+      {
+      Id = id;
+      }
     }
   }
