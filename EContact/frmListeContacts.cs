@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EContact.Models;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,16 @@ namespace EContact
     public frmListeContacts()
       {
       InitializeComponent();
+      }
+
+    private void FrmListeContacts_Load(object sender, EventArgs e)
+      {
+      BindingList<Contact> lst = new BindingList<Contact>(DBContact.GetListContacts());
+      dgvContacts.DataSource = lst;
+      dgvContacts.AutoResizeColumns();
+      dgvContacts.AllowUserToResizeColumns = true;
+      dgvContacts.AllowUserToOrderColumns = true;
+      dgvContacts.Columns["Photo"].Visible = false;
       }
     }
   }

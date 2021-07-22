@@ -50,15 +50,16 @@ namespace EContact
       this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
       this.panelMenu.Location = new System.Drawing.Point(0, 0);
       this.panelMenu.Name = "panelMenu";
-      this.panelMenu.Size = new System.Drawing.Size(223, 647);
+      this.panelMenu.Size = new System.Drawing.Size(223, 648);
       this.panelMenu.TabIndex = 0;
       // 
       // btnQuitter
       // 
-      this.btnQuitter.BackColor = System.Drawing.Color.PaleTurquoise;
+      this.btnQuitter.BackColor = System.Drawing.Color.Indigo;
       this.btnQuitter.Cursor = System.Windows.Forms.Cursors.Hand;
       this.btnQuitter.FlatAppearance.BorderSize = 0;
       this.btnQuitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.btnQuitter.ForeColor = System.Drawing.Color.White;
       this.btnQuitter.Image = ((System.Drawing.Image)(resources.GetObject("btnQuitter.Image")));
       this.btnQuitter.Location = new System.Drawing.Point(14, 312);
       this.btnQuitter.Name = "btnQuitter";
@@ -71,10 +72,11 @@ namespace EContact
       // 
       // btnNouveau
       // 
-      this.btnNouveau.BackColor = System.Drawing.Color.PaleTurquoise;
+      this.btnNouveau.BackColor = System.Drawing.Color.Indigo;
       this.btnNouveau.Cursor = System.Windows.Forms.Cursors.Hand;
       this.btnNouveau.FlatAppearance.BorderSize = 0;
       this.btnNouveau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.btnNouveau.ForeColor = System.Drawing.Color.White;
       this.btnNouveau.Image = ((System.Drawing.Image)(resources.GetObject("btnNouveau.Image")));
       this.btnNouveau.Location = new System.Drawing.Point(14, 241);
       this.btnNouveau.Name = "btnNouveau";
@@ -87,10 +89,11 @@ namespace EContact
       // 
       // btnListeContacts
       // 
-      this.btnListeContacts.BackColor = System.Drawing.Color.PaleTurquoise;
+      this.btnListeContacts.BackColor = System.Drawing.Color.Indigo;
       this.btnListeContacts.Cursor = System.Windows.Forms.Cursors.Hand;
       this.btnListeContacts.FlatAppearance.BorderSize = 0;
       this.btnListeContacts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.btnListeContacts.ForeColor = System.Drawing.Color.White;
       this.btnListeContacts.Image = ((System.Drawing.Image)(resources.GetObject("btnListeContacts.Image")));
       this.btnListeContacts.Location = new System.Drawing.Point(14, 170);
       this.btnListeContacts.Name = "btnListeContacts";
@@ -117,7 +120,7 @@ namespace EContact
       this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
       this.panelContent.Location = new System.Drawing.Point(223, 0);
       this.panelContent.Name = "panelContent";
-      this.panelContent.Size = new System.Drawing.Size(845, 647);
+      this.panelContent.Size = new System.Drawing.Size(1153, 648);
       this.panelContent.TabIndex = 1;
       // 
       // frmMenu
@@ -125,7 +128,7 @@ namespace EContact
       this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 23F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
-      this.ClientSize = new System.Drawing.Size(1068, 647);
+      this.ClientSize = new System.Drawing.Size(1376, 648);
       this.Controls.Add(this.panelContent);
       this.Controls.Add(this.panelMenu);
       this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
