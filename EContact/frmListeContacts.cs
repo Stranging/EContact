@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EContact
   {
-  public partial class Menu : Form
+  public partial class frmListeContacts : UserControl
     {
-    public Menu()
+    public frmListeContacts()
       {
       InitializeComponent();
       }

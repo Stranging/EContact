@@ -12,7 +12,7 @@ namespace EContact.Models
     public string nomComplet { get; set; }
     public DateTime dateNaiss { get; set; }
     public string email { get; set; }
-    public string telephone { get; set; }
+    public string  telephone { get; set; }
     public string genre { get; set; }
     public byte[] photo { get; set; }
 

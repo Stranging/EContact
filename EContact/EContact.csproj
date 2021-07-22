@@ -46,16 +46,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu.cs">
+    <Compile Include="frmAddContact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAddContact.Designer.cs">
+      <DependentUpon>frmAddContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListeContacts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmListeContacts.Designer.cs">
+      <DependentUpon>frmListeContacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\DBContact.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddContact.resx">
+      <DependentUpon>frmAddContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListeContacts.resx">
+      <DependentUpon>frmListeContacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -77,6 +98,79 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\chercher2.png" />
+    <Content Include="Images\chercher3.png" />
+    <Content Include="Images\chercher4.png" />
+    <Content Include="Images\cherher1.png" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\editer2.png" />
+    <Content Include="Images\icons8_add_50px.png" />
+    <Content Include="Images\icons8_add_new_50px.png" />
+    <Content Include="Images\icons8_add_user_group_man_man_32px_2.png" />
+    <Content Include="Images\icons8_add_user_group_man_man_50px.png" />
+    <Content Include="Images\icons8_administrator_male.ico" />
+    <Content Include="Images\icons8_available_updates_25px.png" />
+    <Content Include="Images\icons8_available_updates_40px.png" />
+    <Content Include="Images\icons8_available_updates_40px_1.png" />
+    <Content Include="Images\icons8_available_updates_40px_2.png" />
+    <Content Include="Images\icons8_available_updates_50px.png" />
+    <Content Include="Images\icons8_bulleted_list_50px.png" />
+    <Content Include="Images\icons8_checked_checkbox_50px.png" />
+    <Content Include="Images\icons8_close_window_50px.png" />
+    <Content Include="Images\icons8_close_window_50px_1.png" />
+    <Content Include="Images\icons8_google_web_search_32px_2.png" />
+    <Content Include="Images\icons8_list_50px.png" />
+    <Content Include="Images\icons8_list_50px_1.png" />
+    <Content Include="Images\icons8_location_update_40px.png" />
+    <Content Include="Images\icons8_male_user.ico" />
+    <Content Include="Images\icons8_male_user_50px.png" />
+    <Content Include="Images\icons8_male_user_50px_1.png" />
+    <Content Include="Images\icons8_male_user_50px_2.png" />
+    <Content Include="Images\icons8_menu_50px.png" />
+    <Content Include="Images\icons8_ok_25px.png" />
+    <Content Include="Images\icons8_ok_40px.png" />
+    <Content Include="Images\icons8_ok_50px_2.png" />
+    <Content Include="Images\icons8_print_32px.png" />
+    <Content Include="Images\icons8_refresh_50px.png" />
+    <Content Include="Images\icons8_scroll_up_32px.png" />
+    <Content Include="Images\icons8_scroll_up_32px_1.png" />
+    <Content Include="Images\icons8_sync_40px.png" />
+    <Content Include="Images\icons8_tasklist_50px.png" />
+    <Content Include="Images\icons8_update_left_rotation_40px_2.png" />
+    <Content Include="Images\icons8_up_squared_32px.png" />
+    <Content Include="Images\icons8_up_squared_32px_1.png" />
+    <Content Include="Images\icons8_up_squared_40px.png" />
+    <Content Include="Images\icons8_user_groups_50px.png" />
+    <Content Include="Images\logoEContact.png" />
+    <Content Include="Images\Photos\default.png" />
+    <Content Include="Images\Photos\female-cooker.png" />
+    <Content Include="Images\Photos\female-geek.png" />
+    <Content Include="Images\Photos\gardener.png" />
+    <Content Include="Images\Photos\icons8_boy_120px.png" />
+    <Content Include="Images\Photos\icons8_boy_avatar_120px.png" />
+    <Content Include="Images\Photos\icons8_circled_user_female_skin_type_1_2_120px.png" />
+    <Content Include="Images\Photos\icons8_don_quixote_120px.png" />
+    <Content Include="Images\Photos\icons8_monarch_120px.png" />
+    <Content Include="Images\Photos\icons8_old_lady_120px.png" />
+    <Content Include="Images\Photos\icons8_person_120px.png" />
+    <Content Include="Images\Photos\icons8_person_120px_1.png" />
+    <Content Include="Images\Photos\icons8_person_120px_2.png" />
+    <Content Include="Images\Photos\icons8_person_female_120px.png" />
+    <Content Include="Images\Photos\icons8_person_female_120px_1.png" />
+    <Content Include="Images\Photos\icons8_person_female_120px_2.png" />
+    <Content Include="Images\Photos\icons8_school_director_female_skin_type_4_120px.png" />
+    <Content Include="Images\Photos\icons8_senior_120px.png" />
+    <Content Include="Images\Photos\icons8_sophia_loren_120px.png" />
+    <Content Include="Images\Photos\woman %281%29.png" />
+    <Content Include="Images\Photos\woman %282%29.png" />
+    <Content Include="Images\Photos\woman.png" />
+    <Content Include="Images\print.png" />
+    <Content Include="Images\Setup icon.ico" />
+    <Content Include="Images\twitter.png" />
+    <Content Include="Images\update.png" />
+    <Content Include="Images\Upload.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
