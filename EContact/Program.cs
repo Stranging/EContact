@@ -16,6 +16,9 @@ namespace EContact
     [STAThread]
     static void Main()
       {
+      /**
+       * Données de test
+       */
       DBContact.AddContact(new Contact("Poupouss", DateTime.Parse("05/04/1972"), "poupouss@gmail.com", "06 10 20 30 40", "M", null));
       DBContact.AddContact(new Contact("Vick", DateTime.Parse("07/07/1975"), "vick@gmail.com", "06 00 00 00 00", "M", null ));
       DBContact.AddContact(new Contact("Olaf", DateTime.Parse("10/04/78"), "olaf@gmail.com", "06 10 00 00 00", "M", null));

@@ -26,7 +26,9 @@ namespace EContact
       dgvContacts.AutoResizeColumns();
       dgvContacts.AllowUserToResizeColumns = true;
       dgvContacts.AllowUserToOrderColumns = true;
+      dgvContacts.AllowUserToAddRows = false;
       dgvContacts.Columns["Photo"].Visible = false;
+      lblNbreContacts.Text = dgvContacts.Rows.Count.ToString();
       }
     }
   }

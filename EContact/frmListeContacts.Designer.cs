@@ -30,11 +30,11 @@ namespace EContact
     private void InitializeComponent()
       {
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListeContacts));
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
       this.pictureBox2 = new System.Windows.Forms.PictureBox();
       this.label2 = new System.Windows.Forms.Label();
-      this.lblNombre = new System.Windows.Forms.Label();
+      this.label1 = new System.Windows.Forms.Label();
       this.dgvContacts = new System.Windows.Forms.DataGridView();
+      this.lblNbreContacts = new System.Windows.Forms.Label();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.dgvContacts)).BeginInit();
       this.SuspendLayout();
@@ -60,26 +60,19 @@ namespace EContact
       this.label2.TabIndex = 2;
       this.label2.Text = "Liste des contacts";
       // 
-      // lblNombre
+      // label1
       // 
-      this.lblNombre.AutoSize = true;
-      this.lblNombre.Location = new System.Drawing.Point(659, 13);
-      this.lblNombre.Name = "lblNombre";
-      this.lblNombre.Size = new System.Drawing.Size(71, 22);
-      this.lblNombre.TabIndex = 4;
-      this.lblNombre.Text = "label1";
+      this.label1.AutoSize = true;
+      this.label1.ForeColor = System.Drawing.Color.Black;
+      this.label1.Location = new System.Drawing.Point(659, 13);
+      this.label1.Name = "label1";
+      this.label1.Size = new System.Drawing.Size(231, 22);
+      this.label1.TabIndex = 4;
+      this.label1.Text = "Nombre de contacts: ";
       // 
       // dgvContacts
       // 
       this.dgvContacts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-      dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-      dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-      dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-      dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-      dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-      this.dgvContacts.DefaultCellStyle = dataGridViewCellStyle1;
       this.dgvContacts.Location = new System.Drawing.Point(15, 91);
       this.dgvContacts.Name = "dgvContacts";
       this.dgvContacts.RowHeadersWidth = 51;
@@ -87,11 +80,22 @@ namespace EContact
       this.dgvContacts.Size = new System.Drawing.Size(1119, 315);
       this.dgvContacts.TabIndex = 5;
       // 
+      // lblNbreContacts
+      // 
+      this.lblNbreContacts.AutoSize = true;
+      this.lblNbreContacts.ForeColor = System.Drawing.Color.Red;
+      this.lblNbreContacts.Location = new System.Drawing.Point(885, 13);
+      this.lblNbreContacts.Name = "lblNbreContacts";
+      this.lblNbreContacts.Size = new System.Drawing.Size(22, 22);
+      this.lblNbreContacts.TabIndex = 6;
+      this.lblNbreContacts.Text = "0";
+      // 
       // frmListeContacts
       // 
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+      this.Controls.Add(this.lblNbreContacts);
       this.Controls.Add(this.dgvContacts);
-      this.Controls.Add(this.lblNombre);
+      this.Controls.Add(this.label1);
       this.Controls.Add(this.pictureBox2);
       this.Controls.Add(this.label2);
       this.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -109,7 +113,8 @@ namespace EContact
     #endregion
     private System.Windows.Forms.PictureBox pictureBox2;
     private System.Windows.Forms.Label label2;
-    private System.Windows.Forms.Label lblNombre;
+    private System.Windows.Forms.Label label1;
     private System.Windows.Forms.DataGridView dgvContacts;
+    private System.Windows.Forms.Label lblNbreContacts;
     }
   }
