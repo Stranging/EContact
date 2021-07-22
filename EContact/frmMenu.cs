@@ -25,16 +25,20 @@ namespace EContact
     private void BtnListeContacts_Click(object sender, EventArgs e)
       {
       panelContent.Controls.Clear();
-      frmListeContacts frmlc = new frmListeContacts();
-      frmlc.Dock = DockStyle.Fill;
+      frmListeContacts frmlc = new frmListeContacts
+        {
+        Dock = DockStyle.Fill
+        };
       panelContent.Controls.Add(frmlc);
       }
 
     private void BtnNouveau_Click(object sender, EventArgs e)
       {
       panelContent.Controls.Clear();
-      frmAddContact frmac = new frmAddContact();
-      frmac.Dock = DockStyle.Fill;
+      frmAddContact frmac = new frmAddContact
+        {
+        Dock = DockStyle.Fill
+        };
       panelContent.Controls.Add(frmac);
       }
 

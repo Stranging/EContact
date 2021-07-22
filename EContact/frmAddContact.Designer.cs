@@ -191,6 +191,7 @@ namespace EContact
       this.pibPhoto.Location = new System.Drawing.Point(657, 52);
       this.pibPhoto.Name = "pibPhoto";
       this.pibPhoto.Size = new System.Drawing.Size(230, 230);
+      this.pibPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
       this.pibPhoto.TabIndex = 11;
       this.pibPhoto.TabStop = false;
       // 
@@ -222,6 +223,7 @@ namespace EContact
       this.BtnReset.TabIndex = 13;
       this.BtnReset.Text = "Initialiser:";
       this.BtnReset.UseVisualStyleBackColor = false;
+      this.BtnReset.Click += new System.EventHandler(this.BtnReset_Click);
       // 
       // btnUpload
       // 
@@ -236,6 +238,7 @@ namespace EContact
       this.btnUpload.TabIndex = 14;
       this.btnUpload.Text = "Uploader Photo";
       this.btnUpload.UseVisualStyleBackColor = false;
+      this.btnUpload.Click += new System.EventHandler(this.BtnUpload_Click);
       // 
       // frmAddContact
       // 
