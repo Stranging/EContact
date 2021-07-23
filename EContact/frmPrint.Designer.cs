@@ -53,8 +53,8 @@ namespace EContact
       }
 
     #endregion
-    private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+    private Microsoft.Reporting.WinForms.ReportViewer ReportViewer1;
 
-    public ReportViewer RPV { get => reportViewer1; set => reportViewer1 = value; }
+    public ReportViewer RPV { get => ReportViewer1; set => ReportViewer1 = value; }
     }
   }
