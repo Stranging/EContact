@@ -153,9 +153,11 @@ namespace EContact
       frm.RPV.LocalReport.DataSources.Add(rs);
       frm.RPV.LocalReport.ReportEmbeddedResource = "EContact.RPListeContact.rdlc";
       frm.RPV.Dock = DockStyle.Fill;
+      frm.Controls.Add(frm.RPV);
       frm.RPV.RefreshReport();
       frm.StartPosition = FormStartPosition.CenterScreen;
       frm.WindowState = FormWindowState.Maximized;
+      frm.ShowDialog();
       }
     }
   }
