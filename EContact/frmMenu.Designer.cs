@@ -50,7 +50,7 @@ namespace EContact
       this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
       this.panelMenu.Location = new System.Drawing.Point(0, 0);
       this.panelMenu.Name = "panelMenu";
-      this.panelMenu.Size = new System.Drawing.Size(223, 648);
+      this.panelMenu.Size = new System.Drawing.Size(223, 708);
       this.panelMenu.TabIndex = 0;
       // 
       // btnQuitter
@@ -120,7 +120,7 @@ namespace EContact
       this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
       this.panelContent.Location = new System.Drawing.Point(223, 0);
       this.panelContent.Name = "panelContent";
-      this.panelContent.Size = new System.Drawing.Size(1153, 648);
+      this.panelContent.Size = new System.Drawing.Size(1153, 708);
       this.panelContent.TabIndex = 1;
       // 
       // frmMenu
@@ -128,7 +128,7 @@ namespace EContact
       this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 23F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
-      this.ClientSize = new System.Drawing.Size(1376, 648);
+      this.ClientSize = new System.Drawing.Size(1376, 708);
       this.Controls.Add(this.panelContent);
       this.Controls.Add(this.panelMenu);
       this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
