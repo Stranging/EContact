@@ -54,6 +54,7 @@ namespace EContact
       this.label8 = new System.Windows.Forms.Label();
       this.txtID = new System.Windows.Forms.TextBox();
       this.label9 = new System.Windows.Forms.Label();
+      this.btnPrint = new System.Windows.Forms.Button();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.dgvContacts)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.pibPhoto)).BeginInit();
@@ -305,9 +306,25 @@ namespace EContact
       this.label9.TabIndex = 29;
       this.label9.Text = "Id:";
       // 
+      // btnPrint
+      // 
+      this.btnPrint.BackColor = System.Drawing.Color.AliceBlue;
+      this.btnPrint.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+      this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+      this.btnPrint.Location = new System.Drawing.Point(889, 63);
+      this.btnPrint.Name = "btnPrint";
+      this.btnPrint.Size = new System.Drawing.Size(193, 48);
+      this.btnPrint.TabIndex = 30;
+      this.btnPrint.Text = "Imprimer";
+      this.btnPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+      this.btnPrint.UseVisualStyleBackColor = false;
+      this.btnPrint.Click += new System.EventHandler(this.BtnPrint_Click);
+      // 
       // frmListeContacts
       // 
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+      this.Controls.Add(this.btnPrint);
       this.Controls.Add(this.label9);
       this.Controls.Add(this.txtID);
       this.Controls.Add(this.btnUpload);
@@ -371,5 +388,6 @@ namespace EContact
     private System.Windows.Forms.Label label8;
     private System.Windows.Forms.TextBox txtID;
     private System.Windows.Forms.Label label9;
+    private System.Windows.Forms.Button btnPrint;
     }
   }

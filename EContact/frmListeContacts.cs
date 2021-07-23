@@ -1,5 +1,7 @@
 ﻿using EContact.Models;
 
+using Microsoft.Reporting.WinForms;
+
 using System;
 using System.ComponentModel;
 using System.Drawing;
@@ -139,6 +141,21 @@ namespace EContact
 
         lblNbreContacts.Text = dgvContacts.Rows.Count.ToString();
         }
+      }
+
+    private void BtnPrint_Click(object sender, EventArgs e)
+      {
+      ReportDataSource rs = new ReportDataSource();
+      rs.Name = "DataSetListeContacts";
+      rs.Value = DBContact.SearchContact(txtRecherche.Text);
+      frmPrint frm = new frmPrint();
+      frm.RPV.LocalReport.DataSources.Clear();
+      frm.RPV.LocalReport.DataSources.Add(rs);
+      frm.RPV.LocalReport.ReportEmbeddedResource = "EContact.RPListeContact.rdlc";
+      frm.RPV.Dock = DockStyle.Fill;
+      frm.RPV.RefreshReport();
+      frm.StartPosition = FormStartPosition.CenterScreen;
+      frm.WindowState = FormWindowState.Maximized;
       }
     }
   }
