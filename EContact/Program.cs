@@ -1,11 +1,8 @@
 ﻿using EContact.Models;
 
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EContact
@@ -25,7 +22,7 @@ namespace EContact
       Bitmap image = Properties.Resources._default;
       image.Save(stream, image.RawFormat);
       byte[] binImage = stream.ToArray();
-      
+
       /**
        * Données de test
        */

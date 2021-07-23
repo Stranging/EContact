@@ -1,13 +1,7 @@
 ﻿using EContact.Models;
 
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EContact
@@ -29,6 +23,26 @@ namespace EContact
       dgvContacts.AllowUserToAddRows = false;
       dgvContacts.Columns["Photo"].Visible = false;
       lblNbreContacts.Text = dgvContacts.Rows.Count.ToString();
+      }
+
+    private void BtnRechercher_Click(object sender, EventArgs e)
+      {
+        if(txtRecherche.Text != "")
+        {
+        var lst = new BindingList<Contact>(DBContact.SearchContact(txtRecherche.Text));
+        dgvContacts.DataSource = lst;
+        }
+        else
+        {
+        var lst = new BindingList<Contact>(DBContact.GetListContacts());
+        dgvContacts.DataSource = lst;
+        }
+      lblNbreContacts.Text = dgvContacts.Rows.Count.ToString();
+      }
+
+    private void TxtRecherche_KeyUp(object sender, KeyEventArgs e)
+      {
+      BtnRechercher_Click(sender, e);
       }
     }
   }
