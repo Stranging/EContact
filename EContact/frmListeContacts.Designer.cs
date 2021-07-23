@@ -155,6 +155,7 @@ namespace EContact
       this.btnUpload.TabIndex = 7;
       this.btnUpload.Text = "Uploader Photo";
       this.btnUpload.UseVisualStyleBackColor = false;
+      this.btnUpload.Click += new System.EventHandler(this.BtnUpload_Click);
       // 
       // BtnUpdate
       // 
@@ -169,6 +170,7 @@ namespace EContact
       this.BtnUpdate.TabIndex = 8;
       this.BtnUpdate.Text = "Modifier";
       this.BtnUpdate.UseVisualStyleBackColor = false;
+      this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
       // 
       // btnDelete
       // 
@@ -183,6 +185,7 @@ namespace EContact
       this.btnDelete.TabIndex = 9;
       this.btnDelete.Text = "Supprimer";
       this.btnDelete.UseVisualStyleBackColor = false;
+      this.btnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
       // 
       // pibPhoto
       // 

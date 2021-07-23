@@ -33,6 +33,7 @@ namespace EContact
       DBContact.AddContact(new Contact("Zouzou", DateTime.Parse("04/05/2002"), "zouzou@gmail.com", "06 30 00 00 00", "M", binImage));
       DBContact.AddContact(new Contact("Pepette", DateTime.Parse("01/06/2011"), "pepette@gmail.com", "06 40 00 00 00", "F", binImage));
       DBContact.AddContact(new Contact("Les 5 zouilles", DateTime.Parse("10/03/2002"), "les5zouilles@univ.dieu", "00 00 00 00 00", "M", binImage));
+      DBContact.AddContact(new Contact("Le chat gris", DateTime.Parse("10/05/1980"), "lechatgris@univ.dieu", "00 00 00 00 00", "M", binImage));
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
       Application.Run(new frmMenu());

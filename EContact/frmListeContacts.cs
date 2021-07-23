@@ -72,5 +72,73 @@ namespace EContact
           }
         }
       }
+
+    private void BtnUpload_Click(object sender, EventArgs e)
+      {
+      OpenFileDialog ofd = new OpenFileDialog();
+      ofd.Filter = "Image Files (*.jpg; *.jpeg; *.gif; *.png; *.bmp) | *.jpg; *.jpeg; *.gif; *.png; *.bmp";
+      if (ofd.ShowDialog() == DialogResult.OK)
+        {
+        pibPhoto.Image = new Bitmap(ofd.FileName);
+        }
+      }
+
+    private void BtnUpdate_Click(object sender, EventArgs e)
+      {
+      if (txtID.Text != "")
+        {
+        Contact c = new Contact();
+        c.iD = Int32.Parse(txtID.Text);
+        c.nomComplet = txtNom.Text;
+        c.dateNaiss = dtpNaissance.Value.Date;
+        c.email = txtEmail.Text;
+        c.telephone = txtTelephone.Text;
+        c.genre = cmbGenre.Text;
+
+        MemoryStream stream = new MemoryStream();
+        pibPhoto.Image.Save(stream, pibPhoto.Image.RawFormat);
+        byte[] img = stream.ToArray();
+        c.photo = img;
+
+        DBContact.UpdateContact(c);
+
+        var lst = new BindingList<Contact>(DBContact.GetListContacts());
+        dgvContacts.DataSource = lst;
+
+        MessageBox.Show
+          ("Modification du contact effectuée avec succès",
+          "Modification contact",
+          MessageBoxButtons.OK,
+          MessageBoxIcon.Information);
+        }
+      }
+
+    private void BtnDelete_Click(object sender, EventArgs e)
+      {
+      if(txtID.Text != "")
+        {
+        DialogResult res = MessageBox.Show(
+          "Voulez vous vraiment supprimer ce contact ?",
+          "Confirmation suppression",
+          MessageBoxButtons.YesNo,
+          MessageBoxIcon.Warning
+          );
+        if(res == DialogResult.Yes)
+          {
+          DBContact.DeleteContact(Int32.Parse(txtID.Text));
+
+          var lst = new BindingList<Contact>(DBContact.GetListContacts());
+          dgvContacts.DataSource = lst;
+
+          MessageBox.Show
+            ("Suppression du contact effectuée avec succès",
+            "Suppression contact",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Information);
+          }
+
+        lblNbreContacts.Text = dgvContacts.Rows.Count.ToString();
+        }
+      }
     }
   }
