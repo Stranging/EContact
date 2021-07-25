@@ -89,6 +89,7 @@
     <Compile Include="Models\DBContact.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialise.cs" />
     <EmbeddedResource Include="frmAddContact.resx">
       <DependentUpon>frmAddContact.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +200,7 @@
     <Content Include="Images\twitter.png" />
     <Content Include="Images\update.png" />
     <Content Include="Images\Upload.png" />
+    <Content Include="Sauvegarde.txt" />
     <Content Include="Setup icon.ico" />
     <None Include="Resources\default.png" />
   </ItemGroup>
