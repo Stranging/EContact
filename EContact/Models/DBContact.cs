@@ -1,13 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using EContact.Models;
 
-namespace EContact.Models
+
+namespace EContact
   {
-
-  public static class DBContact
+   public static class DBContact
     {
     public static List<Contact> lstContacts = new List<Contact>();
-
+   
     // Ajouter un contacts à la liste de contacts
     public static int AddContact(Contact c)
       {
@@ -26,6 +28,7 @@ namespace EContact.Models
       */
       lstContacts.Add(c);
       return c.iD;
+      
       }
 
     // Récuperer la liste des contacts

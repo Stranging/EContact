@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using Serialize;
+
 
 namespace EContact
   {
@@ -38,7 +40,7 @@ namespace EContact
 
     private void FrmMenu_Load(object sender, EventArgs e)
       {
-      BtnListeContacts_Click(sender, e);
+      BtnListeContacts_Click(sender, e);    
       }
     }
   }
