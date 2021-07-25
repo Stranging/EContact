@@ -119,7 +119,7 @@ namespace EContact
 
     private void BtnDelete_Click(object sender, EventArgs e)
       {
-      if(txtID.Text != "")
+      if (txtID.Text != "")
         {
         DialogResult res = MessageBox.Show(
           "Voulez vous vraiment supprimer ce contact ?",
@@ -127,7 +127,7 @@ namespace EContact
           MessageBoxButtons.YesNo,
           MessageBoxIcon.Warning
           );
-        if(res == DialogResult.Yes)
+        if (res == DialogResult.Yes)
           {
           DBContact.DeleteContact(Int32.Parse(txtID.Text));
 

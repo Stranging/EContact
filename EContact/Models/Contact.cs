@@ -2,7 +2,7 @@
 
 namespace EContact.Models
   {
-   public class Contact
+  public class Contact
     {
     public int iD { get; set; }
     public string nomComplet { get; set; }
