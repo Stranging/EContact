@@ -12,6 +12,8 @@ namespace EContact
   {
   public partial class frmListeContacts : UserControl
     {
+
+    private string fichier;
     public frmListeContacts()
       {
       InitializeComponent();

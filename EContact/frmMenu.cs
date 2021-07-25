@@ -33,6 +33,7 @@ namespace EContact
         Dock = DockStyle.Fill
         };
       panelContent.Controls.Add(frmac);
+     
       }
 
     private void FrmMenu_Load(object sender, EventArgs e)

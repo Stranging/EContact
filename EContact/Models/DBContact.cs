@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace EContact.Models
   {
+
   public static class DBContact
     {
     public static List<Contact> lstContacts = new List<Contact>();
